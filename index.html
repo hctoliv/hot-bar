@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hot Bar São Paulo · O que acontece na Hot, fica na Hot</title>
+<meta name="description" content="Hot Bar, casa de swing e balada liberal em Moema, São Paulo. Quarta a sábado, a partir das 20h. Tudo é permitido, nada é obrigatório.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#070505">
+<meta property="og:title" content="Hot Bar São Paulo">
+<meta property="og:description" content="O que acontece na Hot, fica na Hot. Casa de swing e balada liberal em Moema.">
+<meta property="og:image" content="img/lounge.webp">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body class="is-locked">
+
+<!-- portal 18+ -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <div class="gate__veil"></div>
+  <div class="gate__box">
+    <img class="gate__logo" src="img/logo.png" alt="Hot Bar" width="193" height="72">
+    <p class="gate__eyebrow">Conteúdo para maiores de 18 anos</p>
+    <h2 class="gate__title" id="gate-title">Antes de entrar,<br><em>uma pergunta.</em></h2>
+    <p class="gate__q">Você tem 18 anos ou mais?</p>
+    <div class="gate__actions">
+      <button class="btn btn--gold" id="gate-yes">Sim, quero entrar</button>
+      <a class="btn btn--ghost" href="https://www.google.com">Não</a>
+    </div>
+    <p class="gate__fine">Ao entrar você concorda em manter a discrição da casa.<br>O que acontece na Hot, fica na Hot.</p>
+  </div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#topo" aria-label="Hot Bar, início"><img src="img/logo.png" alt="Hot Bar" width="193" height="72"></a>
+  <nav class="nav__links" aria-label="Seções">
+    <a href="#casa">A casa</a>
+    <a href="#ambientes">Ambientes</a>
+    <a href="#programacao">Programação</a>
+    <a href="#precos">Preços</a>
+    <a href="#primeira-vez">Primeira vez</a>
+  </nav>
+  <a class="nav__cta" href="#lista">Nome na lista</a>
+  <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="menu" id="menu">
+  <a href="#casa">A casa</a>
+  <a href="#ambientes">Ambientes</a>
+  <a href="#programacao">Programação</a>
+  <a href="#precos">Preços</a>
+  <a href="#primeira-vez">Primeira vez</a>
+  <a href="#lista" class="menu__cta">Nome na lista</a>
+  <p class="menu__foot">Alameda dos Pamaris, 83 · Moema</p>
+</div>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__stage" aria-hidden="true">
+      <div class="hero__col hero__col--1"><video muted playsinline loop preload="auto" poster="video/col1.jpg" data-src="video/col1.mp4"></video></div>
+      <div class="hero__col hero__col--2"><video muted playsinline loop preload="auto" poster="video/col2.jpg" data-src="video/col2.mp4"></video></div>
+      <div class="hero__col hero__col--3"><video muted playsinline loop preload="auto" poster="video/col3.jpg" data-src="video/col3.mp4"></video></div>
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="hero__spot" id="spot" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="eyebrow hero__eyebrow"><span class="dot"></span> Casa de swing e balada liberal · Moema, SP</p>
+      <h1 class="hero__title">
+        <span class="line"><span>O que acontece</span></span>
+        <span class="line"><span>na <em>Hot,</em></span></span>
+        <span class="line line--gold"><span><em>fica na Hot.</em></span></span>
+      </h1>
+      <p class="hero__sub">Lounge, pista, drinks e um clima que esquenta de quarta a sábado, das 20h às 6h. Para casais e solteiros que querem viver a noite sem julgamento.</p>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="#lista">Coloque seu nome na lista</a>
+        <a class="btn btn--ghost" href="#primeira-vez">É a sua primeira vez?</a>
+      </div>
+    </div>
+
+    <div class="hero__meta">
+      <span>Qua a Sáb</span><span>20h → 06h</span><span>+18</span>
+    </div>
+    <a class="hero__scroll" href="#casa" aria-label="Descer"><span></span></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Tudo é permitido</span><i>✦</i><span><em>nada é obrigatório</em></span><i>✦</i>
+      <span>Discrição</span><i>✦</i><span><em>liberdade</em></span><i>✦</i><span>Respeito</span><i>✦</i><span><em>intensidade</em></span><i>✦</i>
+      <span>Tudo é permitido</span><i>✦</i><span><em>nada é obrigatório</em></span><i>✦</i>
+      <span>Discrição</span><i>✦</i><span><em>liberdade</em></span><i>✦</i><span>Respeito</span><i>✦</i><span><em>intensidade</em></span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" id="casa">
+    <div class="manifesto__img" aria-hidden="true"><img src="img/labios.webp" alt="" loading="lazy"></div>
+    <div class="manifesto__inner">
+      <p class="eyebrow">A casa</p>
+      <p class="manifesto__text" data-words>Um ambiente livre de julgamentos, seguro pra você explorar suas fantasias e seus fetiches. Na Hot Bar <em>tudo é permitido,</em> mas <em>nada é obrigatório.</em></p>
+      <div class="manifesto__stats">
+        <div><strong data-count="11">0</strong><span>anos de Hot<br>em novembro</span></div>
+        <div><strong>4</strong><span>noites por semana<br>em São Paulo</span></div>
+        <div><strong>2</strong><span>unidades<br>SP e Curitiba</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A NOITE -->
+  <section class="noite" id="noite">
+    <div class="noite__head">
+      <p class="eyebrow">Como a noite acontece</p>
+      <h2 class="h2">Do primeiro olhar<br><em>à última música.</em></h2>
+    </div>
+
+    <div class="noite__grid">
+      <article class="scene scene--video">
+        <div class="scene__media"><video muted playsinline loop preload="none" poster="video/noite.jpg" data-src="video/noite.mp4"></video></div>
+        <div class="scene__txt">
+          <span class="scene__n">01</span>
+          <h3>A chegada</h3>
+          <p>Tapete vermelho, porta discreta e um endereço em Moema, pertinho do Aeroporto de Congonhas e dos melhores hotéis da cidade.</p>
+        </div>
+      </article>
+      <article class="scene">
+        <div class="scene__media"><img src="img/drinks.webp" alt="Dois drinks no balcão sob luz neon" loading="lazy"></div>
+        <div class="scene__txt">
+          <span class="scene__n">02</span>
+          <h3>O lounge</h3>
+          <p>Onde a paquera rola solta. O melhor da coquetelaria, com aquele toque afrodisíaco que esquenta a noite.</p>
+        </div>
+      </article>
+      <article class="scene">
+        <div class="scene__media"><img src="img/pista.webp" alt="Controladora do DJ iluminada" loading="lazy"></div>
+        <div class="scene__txt">
+          <span class="scene__n">03</span>
+          <h3>A pista</h3>
+          <p>Som e luz de última geração, EDM e ritmos dançantes, gogo dancers no palco. Na pista o clima esquenta e não tem hora pra acabar.</p>
+        </div>
+      </article>
+      <article class="scene">
+        <div class="scene__media"><img src="img/casal.webp" alt="Casal dançando abraçado" loading="lazy"></div>
+        <div class="scene__txt">
+          <span class="scene__n">04</span>
+          <h3>O resto</h3>
+          <p>Fica entre vocês. Ambientes pensados pra liberdade e intimidade, e uma única regra de ouro: respeito.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- AMBIENTES (horizontal) -->
+  <section class="amb" id="ambientes">
+    <div class="amb__pin">
+      <div class="amb__track" id="ambTrack">
+        <div class="amb__intro">
+        <p class="eyebrow">Ambientes</p>
+        <h2 class="h2">Luxo, penumbra<br><em>e veludo vermelho.</em></h2>
+        <p class="amb__lead">Um projeto arquitetônico feito pra seduzir. Arrasta o olhar.</p>
+        </div>
+        <figure class="amb__card amb__card--tall"><img src="img/lustre.webp" alt="Salão com lustre de cristal na penumbra" loading="lazy"><figcaption><span>i</span>O salão</figcaption></figure>
+        <figure class="amb__card"><img src="img/02.webp" alt="Bar com balcão iluminado" loading="lazy"><figcaption><span>ii</span>O bar</figcaption></figure>
+        <figure class="amb__card amb__card--tall"><img src="img/05.webp" alt="Escultura de leão dourado" loading="lazy"><figcaption><span>iii</span>O leão</figcaption></figure>
+        <figure class="amb__card"><img src="img/03.webp" alt="Espelho redondo e luminárias douradas sobre papel de parede vermelho" loading="lazy"><figcaption><span>iv</span>O espelho</figcaption></figure>
+        <figure class="amb__card"><img src="img/06.webp" alt="Pista com lasers" loading="lazy"><figcaption><span>v</span>A pista</figcaption></figure>
+        <figure class="amb__card amb__card--tall"><img src="img/01.webp" alt="Detalhe de lustre dourado" loading="lazy"><figcaption><span>vi</span>Os cristais</figcaption></figure>
+        <figure class="amb__card"><img src="img/09.webp" alt="Prateleira de bebidas sob luz vermelha" loading="lazy"><figcaption><span>vii</span>A adega</figcaption></figure>
+        <figure class="amb__card"><img src="img/08.webp" alt="Ambiente reservado visto por uma janela redonda" loading="lazy"><figcaption><span>viii</span>O reservado</figcaption></figure>
+        <figure class="amb__card"><img src="img/07.webp" alt="Jardim interno com luz azul" loading="lazy"><figcaption><span>ix</span>O jardim</figcaption></figure>
+        <figure class="amb__card amb__card--tall"><img src="img/10.webp" alt="Balde de champanhe e flores brancas" loading="lazy"><figcaption><span>x</span>O brinde</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMAÇÃO -->
+  <section class="prog" id="programacao">
+    <div class="prog__head">
+      <div>
+        <p class="eyebrow">Programação da semana</p>
+        <h2 class="h2">Esta semana<br><em>é de Halloween.</em></h2>
+      </div>
+      <p class="prog__note"><strong>Novembro inteiro:</strong> 11 anos de Hot Bar. Venha brindar com a gente o mês todo.</p>
+    </div>
+    <div class="prog__list">
+      <a class="poster" href="#lista" data-evento="29/10 · Quinta · Halloween Hot">
+        <img src="img/agenda-2026-10-29.jpg" alt="Cartaz Halloween Hot, quinta 29 de outubro" loading="lazy">
+        <div class="poster__info"><span class="poster__d">29.10</span><span>Quinta</span><strong>Halloween Hot</strong></div>
+      </a>
+      <a class="poster" href="#lista" data-evento="30/10 · Sexta · Halloween Hot">
+        <img src="img/agenda-2026-10-30.jpg" alt="Cartaz Halloween, sexta 30 de outubro" loading="lazy">
+        <div class="poster__info"><span class="poster__d">30.10</span><span>Sexta</span><strong>Halloween Hot</strong></div>
+      </a>
+      <a class="poster" href="#lista" data-evento="31/10 · Sábado · Hot Halloween">
+        <img src="img/agenda-2026-10-31.jpg" alt="Cartaz Hot Halloween, sábado 31 de outubro" loading="lazy">
+        <div class="poster__info"><span class="poster__d">31.10</span><span>Sábado</span><strong>Hot Halloween</strong></div>
+      </a>
+      <a class="poster" href="#lista" data-evento="01/11 · Domingo · Rock Swing">
+        <img src="img/agenda-2026-11-01.jpg" alt="Cartaz Rock Swing com banda ao vivo, domingo 1º de novembro" loading="lazy">
+        <div class="poster__info"><span class="poster__d">01.11</span><span>Domingo, véspera de feriado</span><strong>Rock Swing</strong></div>
+      </a>
+    </div>
+    <p class="alert"><span>Atenção</span> Cuidado com golpes: a Hot Bar não vende ingressos antecipados.</p>
+  </section>
+
+  <!-- PREÇOS -->
+  <section class="precos" id="precos">
+    <div class="precos__bg" aria-hidden="true"><img src="img/lounge.webp" alt="" loading="lazy"></div>
+    <div class="precos__inner">
+      <p class="eyebrow">Preços · São Paulo</p>
+      <h2 class="h2">Com lista,<br><em>a noite rende mais.</em></h2>
+
+      <div class="tabs" role="tablist">
+        <button class="tab is-on" role="tab" aria-selected="true" data-tab="semana">Qua, Qui e Dom</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="fds">Sex e Sáb</button>
+        <span class="tabs__pill" aria-hidden="true"></span>
+      </div>
+
+      <div class="prices" data-panel="semana">
+        <div class="price price--hot"><span class="price__who">Casal<small>ele + ela</small></span><span class="price__val"><sup>R$</sup>200</span><span class="price__list">Com lista: <b>consome R$100</b></span></div>
+        <div class="price"><span class="price__who">Mulher</span><span class="price__val"><sup>R$</sup>50</span><span class="price__list">Com lista: <b>consome R$50</b></span></div>
+        <div class="price"><span class="price__who">Homem</span><span class="price__val"><sup>R$</sup>600</span><span class="price__list">Com lista: <b>consome R$150</b></span></div>
+      </div>
+      <div class="prices" data-panel="fds" hidden>
+        <div class="price price--hot"><span class="price__who">Casal<small>ele + ela</small></span><span class="price__val"><sup>R$</sup>300</span><span class="price__list">Com lista: <b>consome R$200</b></span></div>
+        <div class="price"><span class="price__who">Mulher</span><span class="price__val"><sup>R$</sup>80</span><span class="price__list">Com lista: <b>consome R$80</b></span></div>
+        <div class="price"><span class="price__who">Homem</span><span class="price__val"><sup>R$</sup>600</span><span class="price__list">Com lista: <b>consome R$150</b></span></div>
+      </div>
+      <ul class="precos__fine">
+        <li>Nomes na lista valem até 00h30.</li>
+        <li>A consumação vale somente para bebidas.</li>
+        <li>Em festas open bar, shows e vésperas de feriado os valores podem mudar.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LISTA -->
+  <section class="lista" id="lista">
+    <div class="lista__media" aria-hidden="true">
+      <video muted playsinline loop preload="none" poster="video/col2.jpg" data-src="video/col2.mp4"></video>
+    </div>
+    <div class="lista__box">
+      <p class="eyebrow">Lista · São Paulo</p>
+      <h2 class="h2">Seu nome<br><em>na porta.</em></h2>
+      <p class="lista__lead">Preenche aqui e a gente abre o WhatsApp da casa com tudo pronto. É só enviar.</p>
+      <form class="form" id="form" novalidate>
+        <label class="field"><span>Nome</span><input name="nome" required autocomplete="name" placeholder="Como vai na lista"></label>
+        <fieldset class="field field--chips">
+          <legend>Vou como</legend>
+          <label><input type="radio" name="como" value="Casal (ele + ela)" checked><span>Casal</span></label>
+          <label><input type="radio" name="como" value="Mulher"><span>Mulher</span></label>
+          <label><input type="radio" name="como" value="Homem"><span>Homem</span></label>
+        </fieldset>
+        <label class="field"><span>Evento</span>
+          <select name="evento" id="evento">
+            <option>29/10 · Quinta · Halloween Hot</option>
+            <option>30/10 · Sexta · Halloween Hot</option>
+            <option>31/10 · Sábado · Hot Halloween</option>
+            <option>01/11 · Domingo · Rock Swing</option>
+          </select>
+        </label>
+        <button class="btn btn--gold btn--full" type="submit">Enviar pelo WhatsApp</button>
+        <p class="form__err" id="formErr" role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- PRIMEIRA VEZ -->
+  <section class="first" id="primeira-vez">
+    <div class="first__head">
+      <p class="eyebrow">Guia da primeira vez</p>
+      <h2 class="h2">Primeira vez?<br><em>Chega leve.</em></h2>
+      <p class="first__lead">O que você precisa saber antes de cruzar a porta. Sem pressão, sem segredo.</p>
+    </div>
+    <div class="acc">
+      <details open>
+        <summary><span class="acc__n">01</span>Como se vestir<i></i></summary>
+        <p>Traje esporte fino obrigatório. Não entram boné, chapéu, gorro, touca, regata, moletom, camisa de time ou torcida, mochila, chinelo, rasteirinha, tênis feminino, bermuda e calça capri.</p>
+      </details>
+      <details>
+        <summary><span class="acc__n">02</span>Quem pode entrar<i></i></summary>
+        <p>Somente maiores de 18 anos. Para a entrada como casal, vale a configuração homem + mulher, e se uma das pessoas sai, a outra não permanece. Entre sempre com quem você conhece e com quem se sente confortável.</p>
+      </details>
+      <details>
+        <summary><span class="acc__n">03</span>Fotos e vídeos<i></i></summary>
+        <p>Não é permitido fotografar nem filmar dentro da casa, e nenhuma iluminação é permitida nas áreas privativas. A discrição de todo mundo é o que deixa a noite livre.</p>
+      </details>
+      <details>
+        <summary><span class="acc__n">04</span>A regra de ouro<i></i></summary>
+        <p>Tudo é permitido, mas nada é obrigatório. A casa não tolera violência, intimidação, constrangimento nem qualquer atitude discriminatória, e a equipe intervém sempre que preciso.</p>
+      </details>
+      <details>
+        <summary><span class="acc__n">05</span>O que não entra<i></i></summary>
+        <p>Armas e drogas ilícitas são proibidas. A casa também não permite profissionais do sexo, preservando a dinâmica entre os frequentadores.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- UNIDADES -->
+  <section class="units" id="unidades">
+    <p class="eyebrow">Unidades</p>
+    <h2 class="h2">Duas cidades,<br><em>o mesmo calor.</em></h2>
+    <div class="units__grid">
+      <article class="unit">
+        <div class="unit__img"><img src="img/sp.webp" alt="Ponte estaiada de São Paulo à noite" loading="lazy"></div>
+        <div class="unit__body">
+          <h3>São Paulo</h3>
+          <p>Alameda dos Pamaris, 83<br>Moema · perto de Congonhas</p>
+          <p class="unit__h">Quarta a sábado · 20h às 6h</p>
+          <div class="unit__links">
+            <a href="https://wa.me/5511950399869" target="_blank" rel="noopener">WhatsApp (11) 95039-9869</a>
+            <a href="https://www.instagram.com/hbbar_sp/" target="_blank" rel="noopener">@hbbar_sp</a>
+            <a href="https://maps.google.com/?q=Alameda+dos+Pamaris,+83,+Moema,+São+Paulo" target="_blank" rel="noopener">Como chegar</a>
+          </div>
+        </div>
+      </article>
+      <article class="unit">
+        <div class="unit__img"><img src="img/cwb.webp" alt="Jardim Botânico de Curitiba iluminado de vermelho" loading="lazy"></div>
+        <div class="unit__body">
+          <h3>Curitiba</h3>
+          <p>Rua Ébano Pereira, 334<br>Centro</p>
+          <p class="unit__h">Sexta e sábado · 22h às 5h</p>
+          <div class="unit__links">
+            <a href="https://wa.me/5541984474881" target="_blank" rel="noopener">WhatsApp (41) 98447-4881</a>
+            <a href="https://www.instagram.com/hotbar_curitiba/" target="_blank" rel="noopener">@hotbar_curitiba</a>
+            <a href="https://maps.google.com/?q=Rua+Ébano+Pereira,+334,+Curitiba" target="_blank" rel="noopener">Como chegar</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final">
+    <div class="final__media" aria-hidden="true"><video muted playsinline loop preload="none" poster="video/col1.jpg" data-src="video/col1.mp4"></video></div>
+    <div class="final__in">
+      <p class="final__big"><em>A noite</em><br>te espera.</p>
+      <a class="btn btn--gold" href="#lista">Coloque seu nome na lista</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <img src="img/logo.png" alt="Hot Bar" width="193" height="72" loading="lazy">
+  <p>O que acontece na Hot, fica na Hot.</p>
+  <p class="foot__small">Proibida a entrada de menores de 18 anos · contato@hotbar.com.br<br>© 2026 Hot Bar. Todos os direitos reservados.</p>
+</footer>
+
+<a class="float" href="#lista" aria-label="Colocar nome na lista"><span>Lista</span></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js?v=1"></script>
+</body>
+</html>
