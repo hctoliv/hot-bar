@@ -4,7 +4,10 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const mobile = () => innerWidth <= 760;
   const hasGsap = typeof gsap !== 'undefined';
-  if (hasGsap) gsap.registerPlugin(ScrollTrigger);
+  if (hasGsap) { gsap.registerPlugin(ScrollTrigger); ScrollTrigger.config({ ignoreMobileResize: true }); }
+
+  // no celular o texto de Ambientes sai do carrossel e fica acima dele
+  if (mobile()) $('.amb__pin').prepend($('.amb__intro'));
 
   // vídeos: carregam quando chegam perto da tela e pausam fora dela
   const loadVideo = v => { if (!v.src && v.dataset.src) { v.src = v.dataset.src; } };
@@ -73,7 +76,7 @@
     const tl = gsap.timeline({ delay: ok ? .1 : .7 });
     tl.from('.hero__col', { clipPath: 'inset(100% 0 0 0)', stagger: .12, duration: 1.4, ease: 'expo.out' })
       .from('.hero__title .line > span', { yPercent: 110, stagger: .1, duration: 1.2, ease: 'expo.out' }, '-=1')
-      .from(['.hero__eyebrow', '.hero__sub', '.hero__actions', '.hero__meta', '.nav'], { y: 20, opacity: 0, stagger: .08, duration: .9, ease: 'power3.out' }, '-=.8');
+      .from(['.hero__eyebrow', '.hero__sub', '.hero__actions', '.nav'], { y: 20, opacity: 0, stagger: .08, duration: .9, ease: 'power3.out' }, '-=.8');
   }
 
   // spotlight do mouse no hero + brilho que segue o cursor
@@ -105,6 +108,14 @@
     lastY = y;
   };
   addEventListener('scroll', onScroll, { passive: true });
+
+  // o botão flutuante some quando o formulário ou o rodapé estão na tela
+  const away = new Set();
+  const floatIo = new IntersectionObserver(es => {
+    es.forEach(e => e.isIntersecting ? away.add(e.target) : away.delete(e.target));
+    float.classList.toggle('is-away', away.size > 0);
+  });
+  ['.lista__box', '.foot'].forEach(s => floatIo.observe($(s)));
 
   const burger = $('#burger'), menu = $('#menu');
   burger.addEventListener('click', () => {
