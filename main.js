@@ -199,6 +199,7 @@
   $$('.price').forEach((p, i) => gsap.from(p, { y: 50, opacity: 0, duration: 1, delay: i * .08, ease: 'power3.out', scrollTrigger: { trigger: '.prices', start: 'top 85%' } }));
   gsap.from('.lista__media', { clipPath: 'inset(0 100% 0 0)', duration: 1.6, ease: 'expo.inOut', scrollTrigger: { trigger: '.lista', start: 'top 70%' } });
   $$('.acc details').forEach((d, i) => gsap.from(d, { x: 40, opacity: 0, duration: 1, delay: i * .06, ease: 'power3.out', scrollTrigger: { trigger: '.acc', start: 'top 80%' } }));
+  gsap.from('.hts__img', { y: 80, rotate: -2, opacity: 0, duration: 1.4, ease: 'expo.out', scrollTrigger: { trigger: '.hts', start: 'top 75%' } });
   $$('.unit').forEach((u, i) => gsap.from(u, { y: 60, opacity: 0, duration: 1.2, delay: i * .1, ease: 'expo.out', scrollTrigger: { trigger: '.units__grid', start: 'top 85%' } }));
   gsap.from('.final__big', { scale: .85, opacity: 0, ease: 'none', scrollTrigger: { trigger: '.final', start: 'top 80%', end: 'center center', scrub: true } });
 
