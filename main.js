@@ -22,7 +22,7 @@
   // no celular o hero mostra uma coluna só, revezando os três cortes
   const heroMain = $('.hero__col--2 video');
   if (mobile()) {
-    const clips = ['video/col2.mp4?v=2', 'video/col1.mp4?v=2', 'video/col3.mp4?v=2'];
+    const clips = ['video/col2.mp4?v=3', 'video/col1.mp4?v=3', 'video/col3.mp4?v=3'];
     let i = 0;
     heroMain.loop = false;
     heroMain.dataset.src = clips[0];
